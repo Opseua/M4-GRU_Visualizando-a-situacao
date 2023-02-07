@@ -24,7 +24,7 @@ LIMIT 10;
 
 
 -- Quais os episódios com mais audiência nos EUA?
-SELECT
+SELECT 
 	episodio_temporada as 'Temporada', 
 	episodio_episodio as 'Episódio', 
 	episodio_titulo as 'Título', 
@@ -43,5 +43,17 @@ SELECT
     personagem_primeiro_aparecimento as 'Primeiro aparecimento'-- Colocar o nome do episódio
 FROM personagens
 ORDER BY personagem_aparecimento_episodios DESC
+LIMIT 10;
+
+
+-- Quais são os episódios mais populares? (baseado no número de comentários da crítica + espectadores)
+SELECT 
+	episodio_episodio as 'Episódio',
+    episodio_temporada as 'Temporada',
+    episodio_titulo as 'Título',
+    (episodio_comentarios_de_usuarios + episodio_comentarios_de_criticos) as 'Total de comentários',
+    episodio_data_lancamento as 'Data de lançamento'
+FROM episodios
+ORDER BY (episodio_comentarios_de_usuarios + episodio_comentarios_de_criticos) DESC
 LIMIT 10;
 
