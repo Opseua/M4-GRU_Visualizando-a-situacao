@@ -1043,10 +1043,3 @@ INSERT INTO casas VALUES
 ('471','Westford','Westerlands');
 
 
-
--- Seleciona os artigos de uma categoria
-SELECT personagem_aparecimento_episodios
-FROM personagens
-ORDER BY personagem_aparecimento_episodios DESC; -- Ordenar em ordem descrescente
-
-
