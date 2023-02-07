@@ -8,7 +8,7 @@ CREATE TABLE personagens (
 	personagem_id INT PRIMARY KEY AUTO_INCREMENT,
 	personagem_nome VARCHAR(255),
 	personagem_ator VARCHAR(255),
-    personagem_aparecimento_episodios VARCHAR(3),
+    personagem_aparecimento_episodios INT,
     personagem_primeiro_aparecimento VARCHAR(4),
     personagem_ultimo_aparecimento VARCHAR(4)
 );
@@ -1044,6 +1044,9 @@ INSERT INTO casas VALUES
 
 
 
-
+-- Seleciona os artigos de uma categoria
+SELECT personagem_aparecimento_episodios
+FROM personagens
+ORDER BY personagem_aparecimento_episodios DESC; -- Ordenar em ordem descrescente
 
 
