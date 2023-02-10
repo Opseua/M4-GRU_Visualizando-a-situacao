@@ -8,4 +8,4 @@ Perguntas:
 - Quais atores participaram de mais episódios?
 - Quais são os episódios mais populares? (baseado no número de comentários da crítica + espectadores)
 
-![Diagrama](https://user-images.githubusercontent.com/113535701/217983549-a24f1438-c75a-4422-8874-1ee2c28e4028.png)
+![Diagrama](https://raw.githubusercontent.com/Opseua/M4-GRU_Visualizando-a-situacao/main/DIAGRAMA/diagrama_imagem.png)
