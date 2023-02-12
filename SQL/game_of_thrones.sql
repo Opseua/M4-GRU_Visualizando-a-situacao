@@ -9,29 +9,29 @@ CREATE TABLE personagens (
 	personagem_nome VARCHAR(255),
 	personagem_ator VARCHAR(255),
     personagem_aparecimento_episodios INT,
-    personagem_primeiro_aparecimento VARCHAR(4),
-    personagem_ultimo_aparecimento VARCHAR(4)
+    personagem_primeiro_aparecimento INT,
+    personagem_ultimo_aparecimento INT
 );
 
 -- Criar entidade (tabela)
 CREATE TABLE episodios (
 	episodio_id INT PRIMARY KEY AUTO_INCREMENT,
-	episodio_temporada VARCHAR(2),
-	episodio_episodio VARCHAR(2),
+	episodio_temporada INT,
+	episodio_episodio INT,
     episodio_titulo VARCHAR(255),
-    episodio_data_lancamento VARCHAR(10),
-    episodio_avaliacao VARCHAR(3),
-    episodio_votos VARCHAR(6),
+    episodio_data_lancamento DATE,
+    episodio_avaliacao FLOAT,
+    episodio_votos INT,
     episodio_resumo LONGTEXT,
     episodio_escritor_1 VARCHAR(30),
     episodio_escritor_2 VARCHAR(30),
     episodio_estrela_1 VARCHAR(30),
     episodio_estrela_2 VARCHAR(30),
     episodio_estrela_3 VARCHAR(30),
-    episodio_comentarios_de_usuarios VARCHAR(4),
-    episodio_comentarios_de_criticos VARCHAR(2),
-    episodio_espectadores_dos_eua VARCHAR(5),
-    episodio_duracao_min VARCHAR(2),
+    episodio_comentarios_de_usuarios INT,
+    episodio_comentarios_de_criticos INT,
+    episodio_espectadores_dos_eua FLOAT,
+    episodio_duracao_min INT,
     episodio_diretor VARCHAR(30)
 );
 

@@ -40,20 +40,20 @@ SELECT
 	personagem_ator as 'Ator',
     personagem_aparecimento_episodios as 'Número de episódios',
     personagem_nome as 'Personagem',
-    personagem_primeiro_aparecimento as 'Primeiro aparecimento'-- Colocar o nome do episódio
+    personagem_primeiro_aparecimento as 'Primeiro aparecimento'
 FROM personagens
 ORDER BY personagem_aparecimento_episodios DESC
 LIMIT 10;
 
 
--- Quais são os episódios mais populares? (baseado no número de comentários da crítica + espectadores)
+-- Quais são os episódios mais populares? (baseado no número de comentários da crítica + comentários de usuários)
 SELECT 
 	episodio_episodio as 'Episódio',
     episodio_temporada as 'Temporada',
     episodio_titulo as 'Título',
-    (episodio_comentarios_de_usuarios + episodio_comentarios_de_criticos) as 'Total de comentários',
+    (episodio_comentarios_de_criticos + episodio_comentarios_de_usuarios) as 'Total de comentários',
     episodio_data_lancamento as 'Data de lançamento'
 FROM episodios
-ORDER BY (episodio_comentarios_de_usuarios + episodio_comentarios_de_criticos) DESC
+ORDER BY (episodio_comentarios_de_criticos + episodio_comentarios_de_usuarios) DESC
 LIMIT 10;
 
