@@ -21,7 +21,7 @@ Game of Thrones é uma série de televisão americana baseada na série de livro
 
 # <h3 align="center">Diagrama</h3>
 
-![Diagrama](https://raw.githubusercontent.com/Opseua/M4-GRU_Visualizando-a-situacao/main/DIAGRAMA/diagrama_imagem.png)
+![Diagrama](./DIAGRAMA/diagrama_imagem.png)
 
 <hr>
 
